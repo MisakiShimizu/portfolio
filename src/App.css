@@ -1,38 +1,121 @@
 .App {
   text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #22333B;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  margin-top: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0 10px;
+  justify-self: center;
+  align-self: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: #22333B;
+}
+
+button {
+  border-radius: 20rem;
+  border: none;
+  padding: 20px;
+  width: auto;
+  min-width: 120px;
+}
+
+/* Text Styles */
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  justify-self: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Navigation */
+
+.navigationContainer li:hover {
+  color: #22333B;
+  font-weight: 700;
+}
+
+/* Hero */
+
+.heroContainer {
+  background-color: #EAE0D5;
+}
+
+.hero {
+  display: flex;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+
+.heroDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 200%;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.heroSpan {
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.portrait {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.portrait img {
+  width: 50%;
+}
+
+.heroButtons {
+  margin-top: 3rem;
+}
+
+.heroButtons :first-child {
+  background-color: #534437;
+  color: #FFFFFF;
+  margin-right: 3%;
+}
+
+.heroButtons :last-child {
+  background-color: #C6AC8F;
+  color: #0A0908;
+}
+
+/* Media Queries */
+
+@media (min-wdth: 1200px) {
+  .wrapper {
+    max-width: 1200px;
   }
 }
